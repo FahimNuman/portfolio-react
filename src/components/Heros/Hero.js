@@ -7,7 +7,7 @@ import resume from "../../asset/resume/MD.Abdullah Al Numan_Software_Engineer_Re
 const Hero = () => {
     return (
         <div>
-            <div className="hero min-h-screen" style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
+            <div className="hero min-h-screen border-spacing-1 border-cyan-400 p-5 rounded-md  mb-10" style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="lg:w-1/2">

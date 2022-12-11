@@ -28,7 +28,7 @@ const Contact = () => {
 
     return (
         <div id="contact">
-            <h1 className="text-5xl text-center my-5">Send Email</h1>
+            <h1 className="text-5xl text-center my-5 mx-auto shadow-2xl border border-spacing-1 border-cyan-400 p-5 rounded-md  mb-10">Send Email</h1>
             <form
                 className="flex flex-col lg:w-1/2 mx-auto shadow-2xl border border-spacing-1 border-cyan-400 p-5 rounded-md  mb-10"
                 onSubmit={handleSubmit}
@@ -36,13 +36,13 @@ const Contact = () => {
                 <input
                     type="text"
                     className="input  w-full px-5 shadow-md border-none bg-none my-5  text-black"
-                    name="name"
+                    name="user_name"
                     placeholder="Full Name"
                 />
                 <input
                     className="input w-full px-5 my-5  text-black"
                     type="email"
-                    name="email"
+                    name="user_email"
                     placeholder="Your Email"
                     required
                 />
@@ -54,7 +54,7 @@ const Contact = () => {
                 />
                 <textarea
                     className="input w-full p-5 h-32  my-5 text-black"
-                    name="text"
+                    name="message"
                     placeholder="Write your email..."
                 />
 

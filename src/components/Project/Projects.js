@@ -35,15 +35,15 @@ const Projects = () => {
     ];
     // console.log(projects);
     return (
-        <div id="projects" className="py-16 mx-auto w-62  lg:py-20 ">
-            <h1 className="text-5xl my-10 text-center">My Projects</h1>
-            <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div id="projects" className="py-16 mx-auto w-62  lg:py-20 shadow-2xl border ">
+            <h1 className="text-5xl my-10 text-center mx-auto shadow-2xl border border-spacing-1 border-cyan-400 p-5 rounded-md  mb-10">My Latest Projects</h1>
+            <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 {projects.map((project) => (
                     <div
                         key={project.title}
-                        className="overflow-hidden  duration-100  rounded shadow-sm hover:-translate-y-2 transition text-white"
+                        className="overflow-hidden  duration-100  rounded shadow-sm hover:-translate-y-2 transition text-white mx-auto shadow-2xl border border-spacing-1 border-cyan-400 p-5 rounded-md  mb-10"
                     >
-                        <div className="overflow-y-auto">
+                        <div className="overflow-y-auto mx-auto shadow-2xl border border-spacing-1 border-cyan-400 p-5 rounded-md  mb-10">
                             <img
                                 src={project.image}
                                 className="object-cover w-full h-52 "
@@ -71,13 +71,13 @@ const Projects = () => {
                                 <a href={project.url} className="btn btn-accent btn-sm">
                                     Live Site
                                 </a>
-                                <Link
+                                {/* <Link
                                     to="/details"
                                     className="btn btn-primary btn-sm"
                                     project={project}
                                 >
                                     Details
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                     </div>

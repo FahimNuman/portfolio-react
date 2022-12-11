@@ -4,20 +4,18 @@ import logo from '../../asset/image/logo-fahim-icon.png';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='mx-auto shadow-2xl border border-spacing-1 border-cyan-400 p-5 rounded-md  mb-10'>
             <div className="navbar bg-base-100">
                 <div className="flex-1">
                     <Link to='/'> <img src={logo} alt="" /></Link>
 
                 
                 </div>
-                <div className="flex-none">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><Link>Blog</Link></li>
+                <div className="flex-none ">
+                    <ul className="menu menu-horizontal px-1 ">
+                        <li><Link to="/blog">Blog</Link></li>
                         
                         <li><Link>About</Link></li>
-
-                        <li><Link>Contact</Link></li>
 
                         <li><Link>Skill</Link></li>
                         <li tabIndex={0}>
